@@ -1,84 +1,641 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
-      "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
-      ]
-    }
-  ]
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hey :-)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "items",
+            "patterns": [
+                "Which items do you have?",
+                "What kinds of items are there?",
+                "What do you sell?"
+            ],
+            "responses": [
+                "We sell coffee and tea",
+                "We have coffee and tea"
+            ]
+        },
+        {
+            "tag": "payments",
+            "patterns": [
+                "Do you take credit cards?",
+                "Do you accept Mastercard?",
+                "Can I pay with Paypal?",
+                "Are you cash only?"
+            ],
+            "responses": [
+                "We accept VISA, Mastercard and Paypal",
+                "We accept most major credit cards, and Paypal"
+            ]
+        },
+        {
+            "tag": "delivery",
+            "patterns": [
+                "How long does delivery take?",
+                "How long does shipping take?",
+                "When do I get my delivery?"
+            ],
+            "responses": [
+                "Delivery takes 2-4 days",
+                "Shipping takes 2-4 days"
+            ]
+        },
+        {
+            "tag": "funny",
+            "patterns": [
+                "Tell me a joke!",
+                "Tell me something funny!",
+                "Do you know a joke?"
+            ],
+            "responses": [
+                "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                "What did the buffalo say when his son left for college? Bison."
+            ]
+        },
+        {
+            "tag": "Online Services",
+            "patterns": [
+                "give me a link of Online Services.",
+                "how to get Online Services?",
+                "how can i find Online Services?",
+                "Where do you get Online Services?",
+                "What is the link to the Online Services?",
+                "How do you get Online Services?",
+                "Guide me to Online Services?"
+            ],
+            "responses": [
+                "you can use this link https://licensing.rura.rw/ for more info.",
+                "Here is the link https://licensing.rura.rw/."
+            ]
+        },
+        {
+            "tag": "Driver Vocational Card (DVC)",
+            "patterns": [
+                "give me a link of Driver Vocational Card (DVC).",
+                "how to get Driver Vocational Card (DVC)?",
+                "how can i find Driver Vocational Card (DVC)?",
+                "Where do you get Driver Vocational Card (DVC)?",
+                "What is the link to the Driver Vocational Card (DVC)?",
+                "How do you get Driver Vocational Card (DVC)?",
+                "Guide me to Driver Vocational Card (DVC)?"
+            ],
+            "responses": [
+                "you can use this link https://dvc.rura.rw/ for more info.",
+                "Here is the link https://dvc.rura.rw/."
+            ]
+        },
+        {
+            "tag": "Consumer Complaint",
+            "patterns": [
+                "give me a link of Consumer Complaint.",
+                "how to get Consumer Complaint?",
+                "how can i find Consumer Complaint?",
+                "Where do you get Consumer Complaint?",
+                "What is the link to the Consumer Complaint?",
+                "How do you get Consumer Complaint?",
+                "Guide me to Consumer Complaint?"
+            ],
+            "responses": [
+                "you can use this link https://licensing.rura.rw/customer/complaint/form for more info.",
+                "Here is the link https://licensing.rura.rw/customer/complaint/form."
+            ]
+        },
+        {
+            "tag": "Type Approved Devices",
+            "patterns": [
+                "give me a link of Type Approved Devices.",
+                "how to get Type Approved Devices?",
+                "how can i find Type Approved Devices?",
+                "Where do you get Type Approved Devices?",
+                "What is the link to the Type Approved Devices?",
+                "How do you get Type Approved Devices?",
+                "Guide me to Type Approved Devices?"
+            ],
+            "responses": [
+                "you can use this link https://licensing.rura.rw/type-approval/search-devices for more info.",
+                "Here is the link https://licensing.rura.rw/type-approval/search-devices."
+            ]
+        },
+        {
+            "tag": "IMEI Verification System",
+            "patterns": [
+                "give me a link of IMEI Verification System.",
+                "how to get IMEI Verification System?",
+                "how can i find IMEI Verification System?",
+                "Where do you get IMEI Verification System?",
+                "What is the link to the IMEI Verification System?",
+                "How do you get IMEI Verification System?",
+                "Guide me to IMEI Verification System?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/tcrplus/ for more info.",
+                "Here is the link http://www.rura.rw/tcrplus/."
+            ]
+        },
+        {
+            "tag": "Annual reports",
+            "patterns": [
+                "give me a link of Annual reports.",
+                "how to get Annual reports?",
+                "how can i find Annual reports?",
+                "Where do you get Annual reports?",
+                "What is the link to the Annual reports?",
+                "How do you get Annual reports?",
+                "Guide me to Annual reports?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=213 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=213."
+            ]
+        },
+        {
+            "tag": "Tariffs",
+            "patterns": [
+                "give me a link of Tariffs.",
+                "how to get Tariffs?",
+                "how can i find Tariffs?",
+                "Where do you get Tariffs?",
+                "What is the link to the Tariffs?",
+                "How do you get Tariffs?",
+                "Guide me to Tariffs?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=288 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=288."
+            ]
+        },
+        {
+            "tag": "Statistics",
+            "patterns": [
+                "give me a link of Statistics.",
+                "how to get Statistics?",
+                "how can i find Statistics?",
+                "Where do you get Statistics?",
+                "What is the link to the Statistics?",
+                "How do you get Statistics?",
+                "Guide me to Statistics?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=276 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=276."
+            ]
+        },
+        {
+            "tag": "Revoked Licenses",
+            "patterns": [
+                "give me a link of Revoked Licenses.",
+                "how to get Revoked Licenses?",
+                "how can i find Revoked Licenses?",
+                "Where do you get Revoked Licenses?",
+                "What is the link to the Revoked Licenses?",
+                "How do you get Revoked Licenses?",
+                "Guide me to Revoked Licenses?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=287 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=287."
+            ]
+        },
+        {
+            "tag": "Key ICT Documents",
+            "patterns": [
+                "give me a link of Key ICT Documents.",
+                "how to get Key ICT Documents?",
+                "how can i find Key ICT Documents?",
+                "Where do you get Key ICT Documents?",
+                "What is the link to the Key ICT Documents?",
+                "How do you get Key ICT Documents?",
+                "Guide me to Key ICT Documents?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=211 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=211."
+            ]
+        },
+        {
+            "tag": "Consumer Affairs",
+            "patterns": [
+                "give me a link of Consumer Affairs.",
+                "how to get Consumer Affairs?",
+                "how can i find Consumer Affairs?",
+                "Where do you get Consumer Affairs?",
+                "What is the link to the Consumer Affairs?",
+                "How do you get Consumer Affairs?",
+                "Guide me to Consumer Affairs?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=279 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=279."
+            ]
+        },
+        {
+            "tag": "Regulations and Guidelines",
+            "patterns": [
+                "give me a link of Regulations and Guidelines.",
+                "how to get Regulations and Guidelines?",
+                "how can i find Regulations and Guidelines?",
+                "Where do you get Regulations and Guidelines?",
+                "What is the link to the Regulations and Guidelines?",
+                "How do you get Regulations and Guidelines?",
+                "Guide me to Regulations and Guidelines?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=207 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=207."
+            ]
+        },
+        {
+            "tag": "Board Decisions",
+            "patterns": [
+                "give me a link of Board Decisions.",
+                "how to get Board Decisions?",
+                "how can i find Board Decisions?",
+                "Where do you get Board Decisions?",
+                "What is the link to the Board Decisions?",
+                "How do you get Board Decisions?",
+                "Guide me to Board Decisions?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=208 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=208."
+            ]
+        },
+        {
+            "tag": "Regulations for Consultation",
+            "patterns": [
+                "give me a link of Regulations for Consultation.",
+                "how to get Regulations for Consultation?",
+                "how can i find Regulations for Consultation?",
+                "Where do you get Regulations for Consultation?",
+                "What is the link to the Regulations for Consultation?",
+                "How do you get Regulations for Consultation?",
+                "Guide me to Regulations for Consultation?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=291 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=291."
+            ]
+        },
+        {
+            "tag": "FAQs",
+            "patterns": [
+                "give me a link of FAQs.",
+                "how to get FAQs?",
+                "how can i find FAQs?",
+                "Where do you get FAQs?",
+                "What is the link to the FAQs?",
+                "How do you get FAQs?",
+                "Guide me to FAQs?"
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=217 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=217."
+            ]
+        },
+        {
+            "tag": "Tweets by RURA_RWANDA",
+            "patterns": [
+                "give me a link of Tweets by RURA_RWANDA.",
+                "how to get Tweets by RURA_RWANDA?",
+                "how can i find Tweets by RURA_RWANDA?",
+                "Where do you get Tweets by RURA_RWANDA?",
+                "What is the link to the Tweets by RURA_RWANDA?",
+                "How do you get Tweets by RURA_RWANDA?",
+                "Guide me to Tweets by RURA_RWANDA?"
+            ],
+            "responses": [
+                "you can use this link https://twitter.com/RURA_RWANDA for more info.",
+                "Here is the link https://twitter.com/RURA_RWANDA."
+            ]
+        },
+        {
+            "tag": "Online Services",
+            "patterns": [
+                "give me a link of Online Services.",
+                "how to get Online Services?",
+                "how can i find Online Services?",
+                "Where do you get Online Services?",
+                "What is the link to the Online Services?",
+                "How do you get Online Services?",
+                "Guide me to Online Services?",
+                ""
+            ],
+            "responses": [
+                "you can use this link https://licensing.rura.rw/ for more info.",
+                "Here is the link https://licensing.rura.rw/.",
+                ""
+            ]
+        },
+        {
+            "tag": "Driver Vocational Card (DVC)",
+            "patterns": [
+                "give me a link of Driver Vocational Card (DVC).",
+                "how to get Driver Vocational Card (DVC)?",
+                "how can i find Driver Vocational Card (DVC)?",
+                "Where do you get Driver Vocational Card (DVC)?",
+                "What is the link to the Driver Vocational Card (DVC)?",
+                "How do you get Driver Vocational Card (DVC)?",
+                "Guide me to Driver Vocational Card (DVC)?",
+                ""
+            ],
+            "responses": [
+                "you can use this link https://dvc.rura.rw/ for more info.",
+                "Here is the link https://dvc.rura.rw/.",
+                ""
+            ]
+        },
+        {
+            "tag": "Consumer Complaint",
+            "patterns": [
+                "give me a link of Consumer Complaint.",
+                "how to get Consumer Complaint?",
+                "how can i find Consumer Complaint?",
+                "Where do you get Consumer Complaint?",
+                "What is the link to the Consumer Complaint?",
+                "How do you get Consumer Complaint?",
+                "Guide me to Consumer Complaint?",
+                ""
+            ],
+            "responses": [
+                "you can use this link https://licensing.rura.rw/customer/complaint/form for more info.",
+                "Here is the link https://licensing.rura.rw/customer/complaint/form.",
+                ""
+            ]
+        },
+        {
+            "tag": "Type Approved Devices",
+            "patterns": [
+                "give me a link of Type Approved Devices.",
+                "how to get Type Approved Devices?",
+                "how can i find Type Approved Devices?",
+                "Where do you get Type Approved Devices?",
+                "What is the link to the Type Approved Devices?",
+                "How do you get Type Approved Devices?",
+                "Guide me to Type Approved Devices?",
+                ""
+            ],
+            "responses": [
+                "you can use this link https://licensing.rura.rw/type-approval/search-devices for more info.",
+                "Here is the link https://licensing.rura.rw/type-approval/search-devices.",
+                ""
+            ]
+        },
+        {
+            "tag": "IMEI Verification System",
+            "patterns": [
+                "give me a link of IMEI Verification System.",
+                "how to get IMEI Verification System?",
+                "how can i find IMEI Verification System?",
+                "Where do you get IMEI Verification System?",
+                "What is the link to the IMEI Verification System?",
+                "How do you get IMEI Verification System?",
+                "Guide me to IMEI Verification System?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/tcrplus/ for more info.",
+                "Here is the link http://www.rura.rw/tcrplus/.",
+                ""
+            ]
+        },
+        {
+            "tag": "Annual reports",
+            "patterns": [
+                "give me a link of Annual reports.",
+                "how to get Annual reports?",
+                "how can i find Annual reports?",
+                "Where do you get Annual reports?",
+                "What is the link to the Annual reports?",
+                "How do you get Annual reports?",
+                "Guide me to Annual reports?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=213 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=213.",
+                ""
+            ]
+        },
+        {
+            "tag": "Tariffs",
+            "patterns": [
+                "give me a link of Tariffs.",
+                "how to get Tariffs?",
+                "how can i find Tariffs?",
+                "Where do you get Tariffs?",
+                "What is the link to the Tariffs?",
+                "How do you get Tariffs?",
+                "Guide me to Tariffs?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=288 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=288.",
+                ""
+            ]
+        },
+        {
+            "tag": "Statistics",
+            "patterns": [
+                "give me a link of Statistics.",
+                "how to get Statistics?",
+                "how can i find Statistics?",
+                "Where do you get Statistics?",
+                "What is the link to the Statistics?",
+                "How do you get Statistics?",
+                "Guide me to Statistics?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=276 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=276.",
+                ""
+            ]
+        },
+        {
+            "tag": "Revoked Licenses",
+            "patterns": [
+                "give me a link of Revoked Licenses.",
+                "how to get Revoked Licenses?",
+                "how can i find Revoked Licenses?",
+                "Where do you get Revoked Licenses?",
+                "What is the link to the Revoked Licenses?",
+                "How do you get Revoked Licenses?",
+                "Guide me to Revoked Licenses?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=287 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=287.",
+                ""
+            ]
+        },
+        {
+            "tag": "Key ICT Documents",
+            "patterns": [
+                "give me a link of Key ICT Documents.",
+                "how to get Key ICT Documents?",
+                "how can i find Key ICT Documents?",
+                "Where do you get Key ICT Documents?",
+                "What is the link to the Key ICT Documents?",
+                "How do you get Key ICT Documents?",
+                "Guide me to Key ICT Documents?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=211 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=211.",
+                ""
+            ]
+        },
+        {
+            "tag": "Consumer Affairs",
+            "patterns": [
+                "give me a link of Consumer Affairs.",
+                "how to get Consumer Affairs?",
+                "how can i find Consumer Affairs?",
+                "Where do you get Consumer Affairs?",
+                "What is the link to the Consumer Affairs?",
+                "How do you get Consumer Affairs?",
+                "Guide me to Consumer Affairs?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=279 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=279.",
+                ""
+            ]
+        },
+        {
+            "tag": "Regulations and Guidelines",
+            "patterns": [
+                "give me a link of Regulations and Guidelines.",
+                "how to get Regulations and Guidelines?",
+                "how can i find Regulations and Guidelines?",
+                "Where do you get Regulations and Guidelines?",
+                "What is the link to the Regulations and Guidelines?",
+                "How do you get Regulations and Guidelines?",
+                "Guide me to Regulations and Guidelines?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=207 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=207.",
+                ""
+            ]
+        },
+        {
+            "tag": "Board Decisions",
+            "patterns": [
+                "give me a link of Board Decisions.",
+                "how to get Board Decisions?",
+                "how can i find Board Decisions?",
+                "Where do you get Board Decisions?",
+                "What is the link to the Board Decisions?",
+                "How do you get Board Decisions?",
+                "Guide me to Board Decisions?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=208 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=208.",
+                ""
+            ]
+        },
+        {
+            "tag": "Regulations for Consultation",
+            "patterns": [
+                "give me a link of Regulations for Consultation.",
+                "how to get Regulations for Consultation?",
+                "how can i find Regulations for Consultation?",
+                "Where do you get Regulations for Consultation?",
+                "What is the link to the Regulations for Consultation?",
+                "How do you get Regulations for Consultation?",
+                "Guide me to Regulations for Consultation?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=291 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=291.",
+                ""
+            ]
+        },
+        {
+            "tag": "FAQs",
+            "patterns": [
+                "give me a link of FAQs.",
+                "how to get FAQs?",
+                "how can i find FAQs?",
+                "Where do you get FAQs?",
+                "What is the link to the FAQs?",
+                "How do you get FAQs?",
+                "Guide me to FAQs?",
+                ""
+            ],
+            "responses": [
+                "you can use this link http://www.rura.rw/index.php?id=217 for more info.",
+                "Here is the link http://www.rura.rw/index.php?id=217.",
+                ""
+            ]
+        },
+        {
+            "tag": "Tweets by RURA_RWANDA",
+            "patterns": [
+                "give me a link of Tweets by RURA_RWANDA.",
+                "how to get Tweets by RURA_RWANDA?",
+                "how can i find Tweets by RURA_RWANDA?",
+                "Where do you get Tweets by RURA_RWANDA?",
+                "What is the link to the Tweets by RURA_RWANDA?",
+                "How do you get Tweets by RURA_RWANDA?",
+                "Guide me to Tweets by RURA_RWANDA?",
+                ""
+            ],
+            "responses": [
+                "you can use this link https://twitter.com/RURA_RWANDA for more info.",
+                "Here is the link https://twitter.com/RURA_RWANDA.",
+                ""
+            ]
+        }
+    ]
 }
